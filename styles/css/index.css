@@ -1,0 +1,90 @@
+@font-face {
+  font-family: Goofy;
+  src: url(../../fonts/DeliciousHandrawn-Regular.ttf);
+}
+.main {
+  margin-left: 200px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif, monospace, serif;
+}
+
+#menu {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+#menu .pfpicon {
+  border-radius: 25rem;
+  height: 3rem;
+  width: 3rem;
+  border: 0.1rem solid black;
+}
+
+.img {
+  border-radius: 25rem;
+  height: 11rem;
+  width: 11rem;
+  border: 0.1rem solid black;
+}
+
+.name {
+  font-family: Goofy;
+  color: black;
+}
+
+.panel {
+  min-height: 200px;
+}
+
+.panel ul {
+  margin: 0;
+  padding: 0;
+}
+
+.panel ul li {
+  list-style-type: none;
+  display: inline-block;
+  background: #999;
+  margin: 0;
+  padding: 3px 10px;
+  border-radius: 10px 10px 0 0;
+  color: #fafafa;
+  font-weight: 200;
+  cursor: pointer;
+}
+
+.panel ul li:hover {
+  color: #fafafa;
+  background: #666;
+}
+
+.panel ul li.active {
+  color: #fafafa;
+  background: #666;
+}
+
+.panel .tabs {
+  display: none;
+  background: #c9c9c9;
+  padding: 30px;
+  border-radius: 0 0 10px 10px;
+}
+
+.panel .tabs.active {
+  display: block;
+}
+
+p {
+  font-family: Goofy;
+}/*# sourceMappingURL=index.css.map */
