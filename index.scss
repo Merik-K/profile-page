@@ -2,7 +2,7 @@
 
 // moves everything for the navbar
 .main {
-    margin-left: 200px;
+    margin-left: 12.5rem;
 }
 
 // Reset everything
@@ -14,82 +14,62 @@
 }
 
 // pfp icon
-#menu {
-    height: 100%;
-    width: 200px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    padding-top: 20px;
-
-    .pfpicon {
-        border-radius: 25rem;
-        height: 3rem;
-        width: 3rem;
-        border: 0.1rem solid black;
-    }
-}
-
-// Picture and Name
-.img {
+.pfpicon {
     border-radius: 25rem;
-    height: 11rem;
-    width: 11rem;
+    height: 3rem;
+    width: 3rem;
     border: 0.1rem solid black;
 }
 
-.name {
-    font-family: $text-Font;
-    color: $text-color;
-}
+#all {
+    margin-top: 1rem;
 
-// Looks for the tabs
-.panel {
-    min-height: 200px;
-}
+    #menu {
+        height: 100%;
+        width: 12.5rem;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgb(21, 109, 216);
+        overflow-x: hidden;
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
 
-.panel ul {
-    margin: 0;
-    padding: 0;
-}
 
-.panel ul li {
-    list-style-type: none;
-    display: inline-block;
-    background: #999;
-    margin: 0;
-    padding: 3px 10px;
-    border-radius: 10px 10px 0 0;
-    color: #fafafa;
-    font-weight: 200;
-    cursor: pointer;
-}
 
-.panel ul li:hover {
-    color: #fafafa;
-    background: #666;
-}
+        .img {
+            border-radius: 25rem;
+            height: 11rem;
+            width: 11rem;
+            border: 0.1rem solid black;
+        }
 
-.panel ul li.active {
-    color: #fafafa;
-    background: #666;
-}
+        .name {
+            font-family: $text-Font;
+            color: $text-color;
+            font-size: 2.5rem;
+            display: flex;
+            justify-content: center;
+            font-weight: bold;
+        }
 
-.panel .tabs {
-    display: none;
-    background: #c9c9c9;
-    padding: 30px;
-    border-radius: 0 0 10px 10px;
-}
+        ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
 
-.panel .tabs.active {
-    display: block;
-}
+            li {
+                list-style-type: none;
+                font-size: 1.5rem;
+                font-family: $text-Font;
+            }
+        }
+    }
 
-// texts
-p {
-    font-family: $text-Font;
+    // texts
+    p {
+        font-family: $text-Font;
+    }
 }
