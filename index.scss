@@ -14,11 +14,26 @@
 }
 
 // pfp icon
-.pfpicon {
-    border-radius: 25rem;
-    height: 3rem;
-    width: 3rem;
-    border: 0.1rem solid black;
+nav {
+    height: 100%;
+    width: 3.5rem;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(21, 109, 216);
+    overflow-x: hidden;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+
+    .pfpicon {
+        border-radius: 25rem;
+        height: 3rem;
+        width: 3rem;
+        border: 0.1rem solid black;
+
+    }
 }
 
 #all {
@@ -30,7 +45,7 @@
         position: fixed;
         z-index: 1;
         top: 0;
-        left: 0;
+        left: 3rem;
         background-color: rgb(21, 109, 216);
         overflow-x: hidden;
         padding-top: 20px;
@@ -68,7 +83,8 @@
         }
     }
 
-    // texts
+    B // texts
+
     p {
         font-family: $text-Font;
     }
