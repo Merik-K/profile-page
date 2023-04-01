@@ -1,16 +1,74 @@
-@font-face {
-  font-family: Goofy;
-  src: url(../../fonts/DeliciousHandrawn-Regular.ttf);
-}
-.main {
-  margin-left: 12.5rem;
-}
-
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: sans-serif, monospace, serif;
+}
+
+@font-face {
+  font-family: Goofy;
+  src: url(../../fonts/DeliciousHandrawn-Regular.ttf);
+}
+h1 {
+  font-family: Goofy;
+}
+
+h2 {
+  font-family: Goofy;
+}
+
+h3 {
+  font-family: Goofy;
+}
+
+title {
+  font-family: Goofy;
+}
+
+p {
+  font-family: Goofy;
+}
+
+.main {
+  margin-left: 15.7rem;
+  display: flex;
+  height: 46rem;
+  flex-direction: column;
+  justify-content: center;
+}
+.main .Names {
+  font-size: 2.3rem;
+}
+.main .textes {
+  font-size: 1.5rem;
+}
+.main #tabs1 {
+  border: 0.3rem solid black;
+  border-radius: 1rem;
+}
+.main #tabs2 {
+  border: 0.3rem solid black;
+  border-radius: 1rem;
+}
+.main #tabs3 {
+  border: 0.3rem solid black;
+  border-radius: 1rem;
+}
+.main #tabs4 {
+  border: 0.3rem solid black;
+  border-radius: 1rem;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(21, 109, 216);
+}
+.header .headerName {
+  font-family: Goofy;
+  color: black;
+  text-align: center;
+  font-size: 5rem;
 }
 
 nav {
@@ -49,6 +107,10 @@ nav .pfpicon {
   display: flex;
   flex-direction: column;
 }
+#all #menu .close {
+  width: auto;
+  height: 2rem;
+}
 #all #menu .img {
   border-radius: 25rem;
   height: 11rem;
@@ -67,10 +129,12 @@ nav .pfpicon {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 24rem;
+  justify-content: space-evenly;
 }
 #all #menu ul li {
   list-style-type: none;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-family: Goofy;
 }
 #all B p {

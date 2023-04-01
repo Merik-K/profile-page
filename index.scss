@@ -1,16 +1,85 @@
-@import './scss/partials';
-
-// moves everything for the navbar
-.main {
-    margin-left: 12.5rem;
-}
-
 // Reset everything
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: sans-serif, monospace, serif;
+}
+
+@import './scss/partials';
+
+// text fonts
+h1 {
+    font-family: $text-Font;
+}
+
+h2 {
+    font-family: $text-Font;
+}
+
+h3 {
+    font-family: $text-Font;
+}
+
+title {
+    font-family: $text-Font;
+}
+
+p {
+    font-family: $text-Font;
+}
+
+// moves everything for the navbar
+.main {
+    margin-left: 15.7rem;
+    display: flex;
+    height: 46rem;
+    flex-direction: column;
+    justify-content: center;
+
+    .Names {
+        font-size: 2.3rem;
+    }
+
+    .textes {
+        font-size: 1.5rem;
+    }
+
+    #tabs1 {
+        border: .3rem solid black;
+        border-radius: 1rem;
+    }
+
+    #tabs2 {
+        border: .3rem solid black;
+        border-radius: 1rem;
+    }
+
+    #tabs3 {
+        border: .3rem solid black;
+        border-radius: 1rem;
+    }
+
+    #tabs4 {
+        border: .3rem solid black;
+        border-radius: 1rem;
+    }
+}
+
+
+
+// title for website
+.header {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(21, 109, 216);
+
+    .headerName {
+        font-family: $text-Font;
+        color: $text-color;
+        text-align: center;
+        font-size: 5rem;
+    }
 }
 
 // pfp icon
@@ -52,7 +121,10 @@ nav {
         display: flex;
         flex-direction: column;
 
-
+        .close {
+            width: auto;
+            height: 2rem;
+        }
 
         .img {
             border-radius: 25rem;
@@ -74,10 +146,12 @@ nav {
             display: flex;
             flex-direction: column;
             align-items: center;
+            height: 24rem;
+            justify-content: space-evenly;
 
             li {
                 list-style-type: none;
-                font-size: 1.5rem;
+                font-size: 2rem;
                 font-family: $text-Font;
             }
         }
